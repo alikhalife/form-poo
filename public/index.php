@@ -16,7 +16,8 @@ $form =  new Form($_POST);
     echo $form-> input('Username');
     echo $form-> input('Password');
     echo $form-> select('Countries');
-    echo $form->radioInput('Gender');
+    echo $form-> radioInput('Gender');
+    echo $form-> checkbox('Vehicules');
     echo $form-> textarea('textarea');
 
     echo $form-> submit();

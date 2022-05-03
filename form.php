@@ -9,6 +9,7 @@ class Form{
     public $surround = 'p';
     public $surroundH3 = 'h3';
     private $gender = ['Female', 'Male', 'Other'];
+    private $vehicules = ['Bike', 'Boat', 'Skateboard', 'Car', 'Spaceship'];
     private $countries = array("Afghanistan", "Albania", "Algeria", "American Samoa", "Andorra", "Angola", "Anguilla", "Antarctica",
         "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan", "Bahamas", "Bahrain",
         "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia", "Bosnia and Herzegowina",
@@ -35,8 +36,7 @@ class Form{
     }
 
     private function surround($html){
-        return "<$this->surroundH3>$html</$this->surroundH3
-        }>";
+        return "<$this->surroundH3>$html</$this->surroundH3>";
     }
 
     //function which will show the value of $data in the form
@@ -77,6 +77,15 @@ class Form{
             <label for='$value'> $value </label>");
         }
         echo '</select>';
+    }
+
+    public function checkbox ($check) {
+        echo "<h3> Select your vehicule </h3>";
+
+        foreach ($this->vehicules as $value) {
+           echo  "<input type='checkbox' name='vehicule' value='$value'>
+           <label for='$value'> I have a $value</label><br>";
+        }
     }
 
     public function submit()
