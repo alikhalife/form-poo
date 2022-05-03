@@ -1,12 +1,14 @@
 <?php
 
-require "../form.php";
+require "../Models/form.php";
+require "../Models/html.php";
 
 /*$form = new Form(array(
     'username' => 'Albert'
 ));*/
 
 $form =  new Form($_POST);
+$html = new Html();
 
 
 ?>
@@ -20,11 +22,10 @@ $form =  new Form($_POST);
     echo $form-> checkbox('Vehicules');
     echo $form-> textarea('textarea');
 
+
+
     echo $form-> submit();
 
-
-
-    echo ($form);
     ?>
 
 </form>
