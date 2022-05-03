@@ -8,17 +8,15 @@ require "../form.php";
 
 $form =  new Form($_POST);
 
-echo var_dump($form);
-
 
 ?>
 <form action="" method="post">
 
     <?php
-    echo $form-> input('username');
-    echo $form-> input('password');
-    echo $form-> select('gender');
-    echo $form->radioInput('radio');
+    echo $form-> input('Username');
+    echo $form-> input('Password');
+    echo $form-> select('Countries');
+    echo $form->radioInput('Gender');
     echo $form-> textarea('textarea');
 
     echo $form-> submit();
