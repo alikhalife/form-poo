@@ -3,10 +3,13 @@
 ## Languages used
 ***
 
-![](images/languages/html.svg "HTML")
-![](images/languages/github.svg "GitHub")
-![](images/languages/git.svg "Git")
-![](images/languages/php.svg "PHP")
+![](public/languages/html.svg "HTML")
+![](public/languages/github.svg "GitHub")
+![](public/languages/git.svg "Git")
+
+
+
+![](public/languages/php.svg "PHP")
 
 ## Objectif
 
