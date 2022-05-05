@@ -65,3 +65,14 @@ Créer une `class Html` ( dans un fichier séparé ) qui va générer différent
 
 Vous devez créer cette classes en pensant qu'elles devront être utilisées par un autre développeur.
 Utilisez des noms de propriétés et de méthodes qui ont du sens, restez simple et commentez votre code.
+
+
+# POO: Helpers Class : Etape 3
+
+## Objectif
+
+Créer une `class Validator` qui va servir à valider les données envoyer par le formulaire. Cette classe contiendra des méthodes qui pourront valider :
+- une chaine de caractère
+- un entier
+- un nombre à virgule
+- etc.

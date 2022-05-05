@@ -6,11 +6,20 @@ class Html {
         echo "<link rel='stylesheet' href='$href'>";
     }
 
-    public function meta($attribute, $value) {
-        echo "<meta $attribute='$value'>";
+    public function meta($attribute, $value) : string {
+        return "<meta $attribute=$value>";
     }
 
     public function image($src, $alt) {
-        echo "<img  src='$src' alt='$alt'>";
+        echo "<div><img  src='$src' alt='$alt'></div>";
+    }
+
+    public function link($href, $description){
+        echo "<a href='$href'>$description</a>";
+    }
+
+    public function script($type){
+        echo "<script type='$type'>";
     }
 }
+?>
